@@ -50,7 +50,7 @@ permalink: contact
       data-x="840"
       data-y="470"
       data-responsive_offset="on">
-      <span class="text-white bold opensans"  style="font-size:20px"><i class="fa fa-vbc-contact"></i> +33 (0)557 356 370</span>
+      <span class="text-white bold opensans"  style="font-size:20px"><i class="fa fa-vbc-contact"></i> +33 (0)5 57 35 63 70</span>
     </div>
 
         <!--LAYER 2 Logo hexagon Vibby LEAF-->
@@ -81,15 +81,15 @@ jQuery(document).ready(function() {
           <div class="row">
             <div class="col-md-6">
               <div class="form-group vitalbase-form-group">
-                <input type="text" name="name" class="form-control input-lg"  placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
+                <input type="text" name="name" class="form-control input-lg"  placeholder="Nom *" id="name" required data-validation-required-message="Veuillez saisir votre nom.">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group vitalbase-form-group">
-                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email *"  required data-validation-required-message="Please enter your email address.">
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email *"  required data-validation-required-message="Veuillez saisir une adresse email valide..">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group vitalbase-form-group">
-                <input type="text" name="company" id="company" class="form-control input-lg" placeholder="Company *" required data-validation-required-message="Please enter your company.">
+                <input type="text" name="company" id="company" class="form-control input-lg" placeholder="Société *" required data-validation-required-message="Veuillez saisir le nom de votre société.">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
@@ -98,7 +98,7 @@ jQuery(document).ready(function() {
             </div>
             <div class="col-md-6">
               <div class="form-group vitalbase-form-group">
-                <textarea name="message" id="message" class="form-control input-lg" placeholder="Message *" required ></textarea>
+                <textarea name="message" id="message" class="form-control input-lg" placeholder="Message *" required required data-validation-required-message="Veuillez écrire un message." ></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -110,7 +110,7 @@ jQuery(document).ready(function() {
           </div>
           <div class="clearfix"></div>
           <div class="col-lg-12 text-center">
-            <button type="submit" class="btn btn-l btn-gradient uppercase">Send message</button>
+            <button type="submit" class="btn btn-l btn-gradient uppercase">Envoyer</button>
           </div>
         </form>
       </div>
@@ -121,3 +121,5 @@ jQuery(document).ready(function() {
 </section>
 
 <div id="map-canvas" style="height:420px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkzmkAMUBInKKM1LVwTacm7IXgPJQQetY"></script>
+<script type="text/javascript" src="{{site.url}}/js/map.js"></script>
